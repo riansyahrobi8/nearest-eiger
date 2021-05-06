@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Eiger Terdekat</string>
+    <string name="about_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</string>
+    <string name="made_by">Dibuat Oleh</string>
+    <string name="made_name">Dayat TI 16</string>
+    <string name="about">Tentang Aplikasi</string>
+    <string name="home">Beranda</string>
+    <string name="find_location">Temukan Lokasi</string>
+    <string name="find_eiger">Temukan Toko Eiger</string>
+    <string name="official_website_eiger">Website Resmi Eiger</string>
+    <string name="official_instagram_eiger">Instagram Resmi Eiger</string>
+    <string name="other">Lainnya</string>
+    <string name="help">Bantuan</string>
+    <string name="hour">jam</string>
+    <string name="minute">menit</string>
+    <string name="let_s_begin">Ayo Mulai</string>
+    <string name="map">peta</string>
+</resources>

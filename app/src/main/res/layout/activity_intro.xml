@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.intro.IntroActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            app:srcCompat="@drawable/background" />
+
+        <TextView
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/textColorBlack"
+            android:text="@string/about_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/made_by"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_light"
+            android:text="@string/made_name"
+            android:textAlignment="center"
+            android:textColor="@color/textColorGray"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_begin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/bg_btn"
+            android:text="@string/let_s_begin"
+            android:textAllCaps="false"
+            android:textColor="@color/textColorWhite"
+            android:textSize="18sp" />
+
+</LinearLayout>
