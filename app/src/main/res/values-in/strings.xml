@@ -5,8 +5,6 @@
     <string name="made_by">Dibuat Oleh</string>
     <string name="made_name">Dayat TI 16</string>
     <string name="about">Tentang Aplikasi</string>
-    <string name="home">Beranda</string>
-    <string name="find_location">Temukan Lokasi</string>
     <string name="find_eiger">Temukan Toko Eiger</string>
     <string name="official_website_eiger">Website Resmi Eiger</string>
     <string name="official_instagram_eiger">Instagram Resmi Eiger</string>
@@ -15,5 +13,4 @@
     <string name="hour">jam</string>
     <string name="minute">menit</string>
     <string name="let_s_begin">Ayo Mulai</string>
-    <string name="map">peta</string>
 </resources>

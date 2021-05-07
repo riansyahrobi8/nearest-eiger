@@ -2,8 +2,6 @@ package com.dayat.eigerterdekat.di.module;
 
 import android.app.Activity;
 
-import com.dayat.eigerterdekat.ui.activity.map.MapActivityContract;
-import com.dayat.eigerterdekat.ui.activity.map.MapActivityPresenter;
 import dagger.Module;
 import dagger.Provides;
 
@@ -33,8 +31,8 @@ public class ActivityModule {
     }
 
     // fungsi untuk provide presenter pada activity login
-    @Provides
-    public MapActivityContract.Presenter provideMapActivityPresenter() {
-        return new MapActivityPresenter();
-    }
+//    @Provides
+//    public MapFragmentContract.Presenter provideMapActivityPresenter() {
+//        return new MapFragmentPresenter();
+//    }
 }

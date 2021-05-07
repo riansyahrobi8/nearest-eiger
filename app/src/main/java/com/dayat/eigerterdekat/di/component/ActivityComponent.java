@@ -1,7 +1,6 @@
 package com.dayat.eigerterdekat.di.component;
 
 import com.dayat.eigerterdekat.di.module.ActivityModule;
-import com.dayat.eigerterdekat.ui.activity.map.MapActivity;
 
 import dagger.Component;
 
@@ -13,5 +12,5 @@ import dagger.Component;
 public interface ActivityComponent {
 
     // fungsi yg akan digunakan untuk diinject di activity map
-    void inject(MapActivity mapActivity);
+//    void inject(MapActivity mapActivity);
 }

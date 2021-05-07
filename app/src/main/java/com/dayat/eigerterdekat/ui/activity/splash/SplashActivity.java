@@ -14,7 +14,6 @@ import android.os.Bundle;
 import android.os.Handler;
 
 import com.dayat.eigerterdekat.R;
-import com.dayat.eigerterdekat.ui.activity.home.HomeActivity;
 import com.dayat.eigerterdekat.ui.activity.intro.IntroActivity;
 import com.dayat.eigerterdekat.util.Unit;
 
