@@ -550,61 +550,6 @@ public class MapFragment extends Fragment {
         });
     }
 
-
-//    @Override
-//    public void onGetListLocation(@Nullable ArrayList<LocationModel> locations) {
-//
-//        if (locations != null) {
-//            // untuk setiap data array di response
-//            for (LocationModel r : locations){
-//
-//                // akan dipanggil fungsi untuk
-//                // menunjukan jarak
-//                r.Distance = r.calculateDistance(userCoordinate);
-//
-//
-//                // tampilkan marker lokasi yang terdekat berdasarkan rutenya yg paling pendek
-//                showOnlyShortestRouting(new Waypoint(userCoordinate),
-//                        new Waypoint(new GeoCoordinates(r.Latitude,r.Longitude)),new Unit<Boolean>(){
-//
-//                            @Override
-//                            public void invoke(Boolean o) {
-//
-//                                // memanggil fungsi untuk membuat marker lokasi
-//                                CustomMarker customMarker = createCustomMarker(context,r);
-//
-//                                // tambahkan ke array marker
-//                                markers.add(customMarker);
-//
-//                                // tampilkan marker dimap
-//                                mapView.getMapScene().addMapMarker(customMarker.marker);
-//
-//                                // tampilkan marker dimap
-//                                mapView.addMapOverlay(customMarker.markerOverlay);
-//
-//                                // arahkan kamera ke marker
-//                                // data lokasi wisata kuliner
-//                                // posisi pertama
-//                                mapView.getCamera().setTarget(new GeoCoordinates(r.Latitude,r.Longitude));
-//
-//                                // setting tingkatan zoom kamera
-//                                mapView.getCamera().setZoomLevel(ZOOM_LEVEL);
-//                            }
-//                        });
-//            }
-//        }
-//    }
-
-//    @Override
-//    public void showProgressGetListLocation(Boolean show) {
-//
-//    }
-//
-//    @Override
-//    public void showErrorGetListLocation(String error) {
-//        Toast.makeText(context,error,Toast.LENGTH_SHORT).show();
-//    }
-
     // fungsi untuk mendapatkan data
     // lokasi wisata kuliner terdekat
     private void getAllNearestLocation(GeoCoordinates userCoordinate, boolean loading){
@@ -615,8 +560,7 @@ public class MapFragment extends Fragment {
         location.CurrentLatitude = userCoordinate.latitude;
         location.CurrentLongitude = userCoordinate.longitude;
 
-        // panggil fungsi presenter
-//        presenter.getListLocation(location,loading );
+        // panggil fungsi validateLocation
         validateLocation(getLocations());
     }
 
@@ -681,47 +625,6 @@ public class MapFragment extends Fragment {
         markers.clear();
     }
 
-//    @Override
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//        if (item.getItemId() == android.R.id.home) {
-//            startActivity(new Intent(context, HomeActivity.class));
-//            finish();
-//        }
-//        return super.onOptionsItemSelected(item);
-//    }
-//
-//    @Override
-//    public void onBackPressed() {
-//        super.onBackPressed();
-//
-//        // set kondisi update route
-//        // ke false agar tidak perluh mengupdate route
-//        // lagi saat aktivity dihancurkan
-//        isUpdateRoute = false;
-//
-//        startActivity(new Intent(context, HomeActivity.class));
-//        finish();
-//    }
-
-
-    // fungsi yg akan dipanggil saat
-    // activity dihancurkan
-//    @Override
-//    protected void onDestroy() {
-//        super.onDestroy();
-//
-//        // set kondisi update route
-//        // ke false agar tidak perluh mengupdate route
-//        // lagi saat aktivity dihancurkan
-//        isUpdateRoute = false;
-//
-//        // memanggil fungsi destroy di map view
-//        mapView.onDestroy();
-//
-//        // memanggil fungsi unsubscribe
-//        presenter.unsubscribe();
-//    }
-
     @Override
     public void onDestroyView() {
         super.onDestroyView();
@@ -733,39 +636,5 @@ public class MapFragment extends Fragment {
 
         // memanggil fungsi destroy di map view
         mapView.onDestroy();
-
-        // memanggil fungsi unsubscribe
-//        presenter.unsubscribe();
     }
-
-    // fungsi yg akan dipanggil saat
-    // activity di pause
-//    @Override
-//    protected void onPause() {
-//        super.onPause();
-//
-//        // memanggil fungsi pause di map view
-//        mapView.onPause();
-//    }
-//
-//    // fungsi yg akan dipanggil saat
-//    // activity dilanjutkan
-//    @Override
-//    protected void onResume() {
-//        super.onResume();
-//
-//        // memanggil fungsi dilanjutkan di map view
-//        mapView.onResume();
-//    }
-//
-//
-//    // pemanggilan register
-//    // dependensi injeksi untuk aktivity ini
-//    private void injectDependency(){
-//        ActivityComponent listcomponent = DaggerActivityComponent.builder()
-//                .activityModule(new ActivityModule(this))
-//                .build();
-//
-//        listcomponent.inject(this);
-//    }
 }

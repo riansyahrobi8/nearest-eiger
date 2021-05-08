@@ -46,13 +46,22 @@ public class StaticVariabel {
     // untuk wisata kuliner dengan 3 parameter
     public static MapOverlay<View> createLocationMarkerWithText(Context c, LocationModel location){
 
+        // masukan layour ke dalam view
         View v = ((Activity) c).getLayoutInflater().inflate(R.layout.location_marker,null);
+
+        // temukan text dengan id
         TextView textView = v.findViewById(R.id.location_name_textview);
+
+        // ubah nilai textnya
         textView.setText(location.Name);
 
+        // buat variabel geocoordinates dengan parameter latitude dan longitude dari lokasi
         GeoCoordinates geoCoordinates = new GeoCoordinates(location.Latitude,location.Longitude);
+
+        // tampung dalam variabel bertipe Mapoverlay
         MapOverlay<View> mapOverlay = new MapOverlay<>(v, geoCoordinates);
 
+        // kembalikan nilai
         return mapOverlay;
     }
 

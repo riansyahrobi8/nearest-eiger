@@ -2,9 +2,13 @@ package com.dayat.eigerterdekat.model.location;
 
 import java.util.ArrayList;
 
+// kelas untuk menampung data lokasi
 public class LocationData {
     public static ArrayList<LocationModel> getLocations(){
+        // buat variabel dengan isian berupa array list
         ArrayList<LocationModel> locations = new ArrayList<LocationModel>();
+
+        // tambahkan isi variabel dengan data sesuai model
         locations.add(
                 new LocationModel(
                         1,
@@ -113,6 +117,8 @@ public class LocationData {
                         1.0
                 )
         );
+
+        // kembalikan nilai variablenya
         return locations;
     }
 }
